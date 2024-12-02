@@ -15,6 +15,7 @@ export default {
         customPurple: "#906d7f",
         customBlue: "#74838c",
         footer: "#771444",
+        about:"#E4D0C4"
       },
     },
   },
