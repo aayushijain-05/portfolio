@@ -5,6 +5,7 @@ import Project1 from "./portfolio/Project1";
 import Graphics from "./portfolio/Graphics";
 import Contact from "./portfolio/Contact";
 import { Project2 } from "./portfolio/Project2";
+import {About} from "./portfolio/About";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     path: "/project2",
     element: <Project2 />,
   },
+  {
+    path: "/about",
+    element: <About />,
+  }
 ]);
 
 
