@@ -1,11 +1,9 @@
-
 import { Intro } from "../components/Intro";
 import { Navbar } from "../components/Navbar";
 import { CardItems } from "../components/CardItems";
 import { Video } from "../components/Video";
 import { Video1 } from "../components/Video1";
 import { CardImg } from "../components/CardImg";
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Card from "../components/Card";
 import gallery1 from "../assets/gallery1.jpeg";
@@ -20,7 +18,7 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 export const HomePage = () => {
-    const [showButton, setShowButton] = useState(false);
+  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,10 +51,10 @@ export const HomePage = () => {
           description='"Coffee Made for the Soul"'
         />
       </Link>
-      <Link to="/">
+      <Link to="/project1">
         <CardItems type={Video1} title="Zura Case Studies" subtitle="Zura music app" description='"Live Life Loud"' />
       </Link>
-      <Link to="/">
+      <Link to="/project3">
         <CardItems
           type={CardImg}
           title="ES Jewelry"
@@ -65,7 +63,7 @@ export const HomePage = () => {
         />
       </Link>
 
-      <div className="px-6 md:px-40">
+      <div className="px-6 lg:mx-32">
         <h1 className="text-3xl font-extrabold text-gray-600 pt-10 border-b-2 border-purple-900">GALLERY</h1>
         <div className="grid grid-cols-1 w-full md:grid-cols-2 gap-5">
           <Link to="/illustrations">
@@ -99,7 +97,5 @@ export const HomePage = () => {
         </button>
       )}
     </div>
-
   );
 };
-

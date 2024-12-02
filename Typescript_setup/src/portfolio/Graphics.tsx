@@ -8,6 +8,7 @@ import gif6 from "../assets/gif6.gif";
 import gallery3 from "../assets/gallery3.png";
 import Carousel from "../components/Carousel";
 import OtherProjects from "./OtherProjects";
+import { Navbar } from "@/components/Navbar";
 const Graphics = () => {
   const imgArray = [gif1, gif2, gif3, gif4, gif5];
   const gifArray = [
@@ -18,6 +19,7 @@ const Graphics = () => {
   const carouselImages = [gif1, gif3];
   return (
     <div>
+      <Navbar />
       <div className="px-6 md:px-40">
         <h1 className="md:text-5xl text-3xl font-extrabold text-gray-600 pt-10 uppercase">motion graphics</h1>
         <p className="text-xs mt-5">
