@@ -50,10 +50,10 @@ export const HomePage = () => {
           description='"Coffee Made for the Soul"'
         />
       </Link>
-      <Link to="/">
+      <Link to="/project1">
         <CardItems type={Video1} title="Zura Case Studies" subtitle="Zura music app" description='"Live Life Loud"' />
       </Link>
-      <Link to="/">
+      <Link to="/project3">
         <CardItems
           type={CardImg}
           title="ES Jewelry"
@@ -62,7 +62,7 @@ export const HomePage = () => {
         />
       </Link>
 
-      <div className="px-6 md:px-40">
+      <div className="px-6 lg:mx-32">
         <h1 className="text-3xl font-extrabold text-gray-600 pt-10 border-b-2 border-purple-900">GALLERY</h1>
         <div className="grid grid-cols-1 w-full md:grid-cols-2 gap-5">
           <Link to="/illustrations">

@@ -10,6 +10,7 @@ import gif5 from "../assets/gif5.gif";
 import gif6 from "../assets/gif6.gif";
 import Carousel from "../components/Carousel";
 import OtherProjects from "./OtherProjects.tsx";
+import { Navbar } from "@/components/Navbar.tsx";
 const Illustrations = () => {
   const imgArray = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7];
   const gifArray = [
@@ -20,6 +21,7 @@ const Illustrations = () => {
   const carouselImages = [gallery1, gallery3];
   return (
     <div>
+      <Navbar />
       <div className="px-6 md:px-40">
         <h1 className="md:text-5xl text-3xl font-extrabold text-gray-600 pt-10 uppercase">Illustration Gallary</h1>
         <p className="text-xs mt-5">

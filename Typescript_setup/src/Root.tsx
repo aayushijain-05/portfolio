@@ -1,8 +1,8 @@
 
 
-import {HomePage} from "./portfolio/HomePage";
-const Root = () => {
+import { HomePage } from "./portfolio/HomePage";
 
+const Root = () => {
   return (
     <div>
       <HomePage />

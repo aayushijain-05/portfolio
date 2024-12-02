@@ -1,14 +1,14 @@
-import zura1 from "../assets/zura1.png";
 import PathLink from "../components/PathLink";
 import { Link } from "react-router-dom";
 
 interface CaseStudyProps {
   name: string;
-  name2: string;
+  name2?: string;
   description: string;
   array: any[];
+  img: string;
 }
-const CaseStudy = ({ name, name2, description, array }: CaseStudyProps) => {
+const CaseStudy = ({ name, name2, description, array, img }: CaseStudyProps) => {
   return (
     <div>
       <div className="px-6 md:px-40">
@@ -21,7 +21,7 @@ const CaseStudy = ({ name, name2, description, array }: CaseStudyProps) => {
             <p className="text-xs leading-5 mt-5">{description}</p>
           </div>
 
-          <img src={zura1} className="mt-16 rounded-md" />
+          <img src={img} className="mt-16 rounded-md" />
         </div>
         <p className="uppercase font-semibold text-xl mt-16 border-l-4 border-red-800 p-6 text-gray-800">
           table of Content

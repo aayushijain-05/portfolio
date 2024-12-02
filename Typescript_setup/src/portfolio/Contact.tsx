@@ -8,9 +8,11 @@ import { Link } from "react-router-dom";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import { Navbar } from "@/components/Navbar";
 const Contact = () => {
   return (
     <div>
+      <Navbar />
       <div className="flex flex-col items-center justify-center px-20">
         <img src={cat} className="w-32 h-32 mt-32" />
         <p className="font-medium text-3xl mt-5 text-gray-700">Let's Stay Connected!</p>
@@ -19,23 +21,23 @@ const Contact = () => {
         </p>
         <div className="grid grid-cols-2 gap-x-10 mt-10 w-96 gap-y-5">
           <div className="flex flex-col">
-            <Label type="first name" className="uppercase mb-2" />
-            <Input type="text" name="firstname" className="w-48 border-gray-300" />
+            <Label type="first name" />
+            <Input type="text" name="firstname" />
           </div>
           <div className="flex flex-col">
-            <Label type="last name" className="uppercase mb-2" />
-            <Input type="text" name="lastname" className="w-48 border-gray-300" />
+            <Label type="last name" />
+            <Input type="text" name="lastname" />
           </div>
           <div className="flex flex-col">
-            <Label type="email" className="uppercase mb-2" />
-            <Input type="text" name="email" className="w-48 border-gray-300" />
+            <Label type="email" />
+            <Input type="text" name="email" />
           </div>
           <div className="flex flex-col">
-            <Label type="phone number" className="uppercase mb-2" />
-            <Input type="text" name="phone number" className="w-48 border-gray-300" />
+            <Label type="phone number" />
+            <Input type="text" name="phone number" />
           </div>
           <div className="flex flex-col">
-            <Label type="message" className="uppercase mb-2" />
+            <Label type="message" />
             <TextArea />
           </div>
         </div>

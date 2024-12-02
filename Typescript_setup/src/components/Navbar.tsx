@@ -14,6 +14,7 @@ export const Navbar = () => {
     <div className="relative p-8 m-2">
       <img src={imgSrc} className="h-14 hover:opacity-70" />
 
+
       <div
         className="lg:hidden flex items-center cursor-pointer absolute top-4 right-4 z-50"
         onClick={toggleMenu}
@@ -22,9 +23,11 @@ export const Navbar = () => {
       </div>
 
       <ul className="hidden lg:flex flex-row justify-end space-x-12 mr-14 font-bold">
-        <NavItem href="#">Projects</NavItem>
+        <NavItem href="/">Projects</NavItem>
         <NavItem href="/about">About</NavItem>
-        <NavItem href="#">Say Hi !</NavItem>
+        <NavItem href="/contact">Say Hi !</NavItem>
+
+    
       </ul>
 
       <div
