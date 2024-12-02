@@ -6,9 +6,9 @@ export const Navbar = () => {
       <img src={imgSrc} className="h-14 hover:opacity-70" />
 
       <ul className="flex flex-row justify-end space-x-12 mr-14 m-8 font-bold ">
-        <NavItem href="#">Projects</NavItem>
+        <NavItem href="/">Projects</NavItem>
         <NavItem href="#">About</NavItem>
-        <NavItem href="#">Say Hi !</NavItem>
+        <NavItem href="/contact">Say Hi !</NavItem>
       </ul>
     </div>
   );
