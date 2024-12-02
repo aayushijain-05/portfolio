@@ -5,7 +5,6 @@ import { CardItems } from "../components/CardItems";
 import { Video } from "../components/Video";
 import { Video1 } from "../components/Video1";
 import { CardImg } from "../components/CardImg";
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Card from "../components/Card";
 import gallery1 from "../assets/gallery1.jpeg";

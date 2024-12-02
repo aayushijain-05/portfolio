@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Root";
-// import HomePage from "./portfolio/HomePage";
 import Illustrations from "./portfolio/Illustrations";
 import Project1 from "./portfolio/Project1";
 import Graphics from "./portfolio/Graphics";

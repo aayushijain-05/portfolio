@@ -1,7 +1,7 @@
 import { Navbar } from "../components/Navbar";
 import Allura from "../assets/Allura.png";
 import { Link } from "react-router-dom";
-import { PathLink } from '../components/PathLink';
+import  PathLink  from '../components/PathLink';
 import { UxResearch } from "./UxResearch";
 import Persona1 from "../assets/Persona1.png";
 import Persona2 from "../assets/Persona2.png";

@@ -1,6 +1,6 @@
 
 
-import HomePage from "./portfolio/HomePage";
+import {HomePage} from "./portfolio/HomePage";
 const Root = () => {
 
   return (

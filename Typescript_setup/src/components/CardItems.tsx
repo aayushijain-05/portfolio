@@ -10,7 +10,7 @@ interface CardItemsProps {
 
 export const CardItems = ({ type: Type, title, subtitle, description, image }: CardItemsProps) => {
   return (
-    <div className="mx-40 pt-20">
+    <div className="lg:mx-40 lg:pt-20 m-4">
       <div className="relative group hover:bg-black/50 hover:backdrop-blur-xs">
         <div className="w-full h-2/4 overflow-hidden relative">
           <Type image={image} />
