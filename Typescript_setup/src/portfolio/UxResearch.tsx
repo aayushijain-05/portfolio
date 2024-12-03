@@ -13,7 +13,7 @@ export const UxResearch = ({ personas, user }: UxResearchProps) => {
       <hr className="border-t-1 border-black my-8" />
       <p className="uppercase font-semibold text-xl mt-16 border-l-4 border-orange-200 p-6 text-gray-800">Personas</p>
       <PersonaCarousel personas={personas} />
-      <p className="uppercase font-semibold text-xl mt-16 border-l-4 border-orange-200 p-6 text-gray-800">
+      <p className="uppercase font-semibold text-xl mt-16 border-l-4 border-orange-200 p-6 text-gray-800 mb-4">
         User Journey
       </p>
       <UserJourneyCard user={user} />

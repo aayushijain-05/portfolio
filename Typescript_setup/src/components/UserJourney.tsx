@@ -4,7 +4,7 @@ export const UserJourney = ({ user }: { user: any }) => {
   console.log(user);
 
   return (
-    <div className="relative text-sm leading-loose border-4 border-orange-200 rounded-md p-6 max-w-5xl mx-auto mb-6">
+    <div className="relative text-sm leading-loose border-4 border-orange-200 rounded-md p-6 max-w-5xl mx-auto mb-6 ">
       <div className="flex flex-col md:flex-row">
         <div className="flex-shrink-0 mb-6 md:mb-0 md:w-1/3 flex flex-col">
           <img src={user?.image} alt={user?.name} className="rounded-lg max-w-xs h-auto object-cover" />
