@@ -18,8 +18,8 @@ export const CardItems = ({ type: Type, title, subtitle, description, image }: C
         <div className="absolute inset-0 bg-transparent group-hover:bg-black/20 group-hover:backdrop-blur-xs transition-all duration-300"></div>
         <div className="absolute bottom-0 left-0 w-full flex items-center justify-center bg-orange-100/50 backdrop-blur-xs text-black text-center p-4">
           <div>
-            <h1 className="text-3xl font-bold mb-4">{title}</h1>
-            <p className="text-lg">
+            <h1 className="text-2xl font-semibold mb-4 font-concert">{title}</h1>
+            <p className="text-sm font-droid">
               <span>
                 {subtitle}
                 <br />

@@ -26,7 +26,6 @@ import gallery2 from "../assets/gallery2.jpg";
 import CaseStudy from "./CaseStudy";
 import DemoVideo from "./DemoVideo";
 
-
 const gifArray = [
   { image: gif5, link: "/project1" },
   { image: gallery3, link: "/project3" },
@@ -127,26 +126,28 @@ const user = [
     credit: "Lucas Sankey",
     imageCreditLink: "https://unsplash.com/@lucassankey",
   },
-
-]
-const imgArray = [Aura1,Aura2,Aura3,Aura4,Aura5];
+];
+const imgArray = [Aura1, Aura2, Aura3, Aura4, Aura5];
 const textArray = [
   {
     text: "PROJECT",
-    description: "Allura Café is a coffeehouse that incorporates the modern structure and the experience of classic Parisian style."
+    description:
+      "Allura Café is a coffeehouse that incorporates the modern structure and the experience of classic Parisian style.",
   },
   {
     text: "Mission Statement",
-    description: "Allura envisions a space where people can come together to connect and share an experience of life and culture with an aim to spread a sense of peace and comfort."
+    description:
+      "Allura envisions a space where people can come together to connect and share an experience of life and culture with an aim to spread a sense of peace and comfort.",
   },
   {
     text: "Vision Statement",
-    description: "Allura envisions a space where people can come together to connect and share an experience of life and culture with an aim to spread a sense of peace and comfort."
+    description:
+      "Allura envisions a space where people can come together to connect and share an experience of life and culture with an aim to spread a sense of peace and comfort.",
   },
   {
     text: "Value Statement",
-    description: "Allura’s values include community, soulfulness, kindness, culture, and individuality."
-  }
+    description: "Allura’s values include community, soulfulness, kindness, culture, and individuality.",
+  },
 ];
 const overviewArray = [
   {
@@ -155,7 +156,8 @@ const overviewArray = [
   },
   {
     text: "TASK",
-    description: "Create a mobile application and brand packaging that is user-friendly but still represents elegance, soulfulness, and individuality.",
+    description:
+      "Create a mobile application and brand packaging that is user-friendly but still represents elegance, soulfulness, and individuality.",
   },
 ];
 const taskArray = [
@@ -165,14 +167,15 @@ const taskArray = [
   },
   {
     text: "TASK",
-    description: "Create a mobile application and brand packaging that is user-friendly but still represents elegance, soulfulness, and individuality.",
+    description:
+      "Create a mobile application and brand packaging that is user-friendly but still represents elegance, soulfulness, and individuality.",
   },
 ];
 
 const competitiveAnalysisData = [
   {
     title: "Starbucks",
-    image:starbucks,
+    image: starbucks,
     strengths: [
       "Strong brand identity",
       "Maintains quality and customer experience",
@@ -180,15 +183,11 @@ const competitiveAnalysisData = [
       "Large menu items",
       "Globally Corp.",
     ],
-    weaknesses: [
-      "High price point",
-      "Sometimes complicated to order",
-      "UI is not intuitive for some customers",
-    ],
+    weaknesses: ["High price point", "Sometimes complicated to order", "UI is not intuitive for some customers"],
   },
   {
     title: "Tim Hortons",
-    image:tim,
+    image: tim,
     strengths: [
       "Sense of local and national brand",
       "Offers both delivery and pick up service",
@@ -202,9 +201,9 @@ const competitiveAnalysisData = [
     ],
   },
 ];
-];
+
 const array = [
-  { text: "1. Brand Overview", link: "#brandoverview" },
+  { text: "1. Brand Overview", link: "#" },
   { text: "2. Project Overview", link: "#" },
   { text: "3. Brand Mockup", link: "#" },
   { text: "4. UX Research", link: "" },
@@ -216,28 +215,26 @@ export const Project2 = () => {
   return (
     <div>
       <Navbar />
-      <div className="px-6 md:px-40">
 
-       <CaseStudy
-          name="ALLURA"
-          name2="CASE STUDY"
-          description="Zura was a passion project that represents my love of music. The project was initially inspired by one of my foster kitten that I had. He was full of curiosity, energy and spirit, but still so comforting and loving. So, I wanted to convey, curiosity, energy but ease, and comfort with this design."
-          array={array}
-          img={Allura}
-        />
-          <div className="px-6 md:px-40">
-          <BrandOverview array={imgArray} textArray={textArray} />
-          <ProjectOverview
+      <CaseStudy
+        name="ALLURA"
+        name2="CASE STUDY"
+        description="Zura was a passion project that represents my love of music. The project was initially inspired by one of my foster kitten that I had. He was full of curiosity, energy and spirit, but still so comforting and loving. So, I wanted to convey, curiosity, energy but ease, and comfort with this design."
+        array={array}
+        img={Allura}
+      />
+      <div className="px-6 md:px-40">
+        <BrandOverview array={imgArray} textArray={textArray} />
+        <ProjectOverview
           overviewArray={overviewArray}
           taskArray={taskArray}
           competitiveAnalysisData={competitiveAnalysisData}
         />
-          </div>
-
-        <UxResearch personas={personas} user={user} />
-        <DemoVideo name="ALLURA" img={gif6} />
-        <OtherProjects array={gifArray} />
       </div>
+
+      <UxResearch personas={personas} user={user} />
+      <DemoVideo name="ALLURA" img={gif6} />
+      <OtherProjects array={gifArray} />
 
       <div className="mt-32">
         <Footer />

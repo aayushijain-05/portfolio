@@ -3,19 +3,19 @@ export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "login-image": "url('./src/assets/bg.jpg')",
-        "popup-image1": "url('./src/assets/popup11.jpg')",
-        "popup-image2": "url('./src/assets/popup12.png')",
-        "popup-image3": "url('./src/assets/popup3.jpg')",
-        "popup-image4": "url('./src/assets/popup42.png')",
+      fontFamily: {
+        changa: ["Changa One", "Impact", "sans-serif"],
+        droid: ["Droid Sans", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        concert: ["Concert One", "sans-serif"],
+        monoton: ["Monoton"],
+        inconsolate: ["Inconsolata", "monospace"],
       },
-      fontFamily: { sans: ["Poppins", "sans-serif"], poppins: ["Poppins", "sans-serif"] },
       colors: {
         customPurple: "#906d7f",
         customBlue: "#74838c",
         footer: "#771444",
-        about:"#E4D0C4"
+        about: "#E4D0C4",
       },
     },
   },

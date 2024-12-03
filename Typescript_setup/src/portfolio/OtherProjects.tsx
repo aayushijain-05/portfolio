@@ -6,7 +6,7 @@ interface OtherProjectsProps {
 const OtherProjects = ({ array }: OtherProjectsProps) => {
   return (
     <div>
-      <h1 className="text-xl font-semibold text-gray-600 pt-20 md:pt-28 border-b-2 border-purple-900">
+      <h1 className="text-xl font-semibold text-gray-600 pt-20 md:pt-28 border-b-2 border-purple-900 font-droid">
         OTHER PROJECTS
       </h1>
       <div className="grid grid-cols-3 gap-3 mt-10 cursor-pointer md:pb-32 relative">
