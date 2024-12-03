@@ -39,6 +39,7 @@ export const HomePage = () => {
     <div>
       <Navbar />
       <Intro />
+
       <div className="px-6 md:px-40 mt-20">
         <h1 className="text-3xl font-extrabold text-gray-600 pt-10 border-b-2 border-zinc-600 font-changa">
           CASE STUDIES

@@ -21,9 +21,6 @@ const BrandOverview = ({ array, textArray }: BrandOverviewProps) => {
             <CardText text={text} description={description} className="h-56 md:h-80" />
           ))}
       </div>
-      {/* <div className="mt-3">
-        <CardText array={textArray} />
-      </div> */}
     </div>
   );
 };

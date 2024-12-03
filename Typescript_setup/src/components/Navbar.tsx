@@ -32,6 +32,7 @@ export const Navbar = () => {
       >
         <ul className="mt-4 flex flex-col items-center justify-start m-2 h-full space-y-8 font-bold">
           <div className="hover:bg-gray-200  hover:px-4">
+
             <NavItem href="/">Projects</NavItem>
           </div>
           <div className="hover:bg-gray-200  hover:px-4">
@@ -39,6 +40,7 @@ export const Navbar = () => {
           </div>
           <div className="hover:bg-gray-200  hover:px-4">
             <NavItem href="/contact">Say Hi !</NavItem>
+
           </div>
         </ul>
       </div>

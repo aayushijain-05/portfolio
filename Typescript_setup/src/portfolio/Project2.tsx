@@ -1,6 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import Allura from "../assets/Allura.png";
-
+import user1 from "../assets/user1.jpg";
 import gif6 from "../assets/gif6.gif";
 
 import { UxResearch } from "./UxResearch";
@@ -25,6 +25,26 @@ import gallery3 from "../assets/gallery3.png";
 import gallery2 from "../assets/gallery2.jpg";
 import CaseStudy from "./CaseStudy";
 import DemoVideo from "./DemoVideo";
+import logo1 from "../assets/logo1.png";
+import logo2 from "../assets/logo2.png";
+import logo3 from "../assets/logo3.png";
+import logo4 from "../assets/logo4.png";
+import logo6 from "../assets/logo6.png";
+import logo8 from "../assets/logo8.png";
+import logo9 from "../assets/logo9.png";
+import logo10 from "../assets/logo10.png";
+import logo11 from "../assets/logo11.png";
+import { StyleGuide } from "./StyleGuide";
+import mock1 from "../assets/mock1.png";
+import mock2 from "../assets/mock2.png";
+import mock3 from "../assets/mock3.png";
+import mock4 from "../assets/mock4.png";
+import mock5 from "../assets/mock5.png";
+import mock6 from "../assets/mock6.png";
+import mock7 from "../assets/mock7.png";
+import mock8 from "../assets/mock8.png";
+import BrandMockups from "./BrandMockups";
+
 
 const gifArray = [
   { image: gif5, link: "/project1" },
@@ -107,8 +127,7 @@ const user = [
     name: "Sara Lewis",
     age: 30,
     profession: "School Bus Driver",
-    image:
-      "https://uploads-ssl.webflow.com/6224dc742ebe526a18a9a71c/6224dc742ebe52a88ba9a7aa_lucas-sankey-SgUSl3BPILs-unsplash.jpg",
+    image: user1,
     scenario:
       "Sara works the morning shifts at 7 am. In the morning, Sara likes to pre-order her coffee and a drink for her co-worker on the app and goes for a pleasant walk over to the coffee shop before she heads over for her shift. On her way home after her work, she likes to pick up another drink for her walk home.",
     expectations: [
@@ -202,6 +221,10 @@ const competitiveAnalysisData = [
   },
 ];
 
+const styleArray = [logo1,logo2,logo3,logo4,logo11,logo6,logo2,logo8,logo9,logo10,logo11,logo2];
+const mockupArray=[mock1,mock2,mock1,mock3,mock1,mock4,mock1,mock5,mock1,mock6,mock7,mock8];
+
+
 const array = [
   { text: "1. Brand Overview", link: "#" },
   { text: "2. Project Overview", link: "#" },
@@ -215,21 +238,30 @@ export const Project2 = () => {
   return (
     <div>
       <Navbar />
-
-      <CaseStudy
-        name="ALLURA"
-        name2="CASE STUDY"
-        description="Zura was a passion project that represents my love of music. The project was initially inspired by one of my foster kitten that I had. He was full of curiosity, energy and spirit, but still so comforting and loving. So, I wanted to convey, curiosity, energy but ease, and comfort with this design."
-        array={array}
-        img={Allura}
-      />
-      <div className="px-6 md:px-40">
-        <BrandOverview array={imgArray} textArray={textArray} />
-        <ProjectOverview
-          overviewArray={overviewArray}
-          taskArray={taskArray}
-          competitiveAnalysisData={competitiveAnalysisData}
+      <div>
+        <CaseStudy
+          name="ALLURA"
+          name2="CASE STUDY"
+          description="Zura was a passion project that represents my love of music. The project was initially inspired by one of my foster kitten that I had. He was full of curiosity, energy and spirit, but still so comforting and loving. So, I wanted to convey, curiosity, energy but ease, and comfort with this design."
+          array={array}
+          img={Allura}
         />
+        <div className="px-6 md:px-40">
+          <BrandOverview array={imgArray} textArray={textArray} />
+          <ProjectOverview
+            overviewArray={overviewArray}
+            taskArray={taskArray}
+            competitiveAnalysisData={competitiveAnalysisData}
+          />
+          <StyleGuide array={styleArray} />
+          <BrandMockups array={mockupArray} height="h-full" className="border-2 border-orange-200 rounded-md object-cover"/>
+        </div>
+        <div className="px-6 md:px-40">
+          <UxResearch personas={personas} user={user} />
+          <DemoVideo name="ALLURA" img={gif6} />
+          <OtherProjects array={gifArray} />
+        </div>
+
       </div>
 
       <UxResearch personas={personas} user={user} />

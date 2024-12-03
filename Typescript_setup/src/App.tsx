@@ -11,7 +11,7 @@ import { About } from "./portfolio/About";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Root/>,
   },
 
   {

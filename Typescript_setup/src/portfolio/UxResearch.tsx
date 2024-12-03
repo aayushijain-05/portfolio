@@ -1,4 +1,4 @@
-import { UserJourneyCard } from "@/components/UserJourneyCard";
+import { UserJourneyCard } from "../components/UserJourneyCard";
 import { PersonaCarousel } from "../components/PersonaCarousel";
 
 interface UxResearchProps {
