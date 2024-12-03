@@ -21,8 +21,10 @@ const Graphics = () => {
     <div>
       <Navbar />
       <div className="px-6 md:px-40">
-        <h1 className="md:text-5xl text-3xl font-extrabold text-gray-600 pt-10 uppercase">motion graphics</h1>
-        <p className="text-xs mt-5">
+        <h1 className="md:text-5xl text-3xl font-extrabold text-gray-600 pt-10 uppercase font-changa">
+          motion graphics
+        </h1>
+        <p className="text-xs mt-5 font-droid">
           Creativity is forever work in progress. These are animations of my 2d illustrations frame by frame in gif
           format.
         </p>

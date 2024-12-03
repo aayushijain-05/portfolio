@@ -3,7 +3,7 @@ import Analysis from "../components/Analysis";
 const ProjectOverview = ({ overviewArray, taskArray, competitiveAnalysisData }: any) => {
   return (
     <div className="mt-24">
-      <p className="uppercase text-center border-b-2 border-slate-900 pb-3 text-2xl font-bold text-gray-600 mb-16">
+      <p className="uppercase text-center border-b-2 border-slate-900 pb-3 text-2xl font-bold text-gray-600 mb-16 font-changa">
         Project Overview
       </p>
       {taskArray &&

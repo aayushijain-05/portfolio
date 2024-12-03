@@ -6,12 +6,12 @@ interface NavItemProps {
   className?: string;
 }
 
-export const NavItem= ({ href, children, className }:NavItemProps) => {
+export const NavItem = ({ href, children, className }: NavItemProps) => {
   return (
     <li>
       <Link
         to={href}
-        className={`text-base text-violet-900 text-opacity-70 hover:text-opacity-30 ${className}`}
+        className={`text-base text-violet-900 text-opacity-70 hover:text-opacity-30 ${className} font-lato`}
       >
         {children}
       </Link>

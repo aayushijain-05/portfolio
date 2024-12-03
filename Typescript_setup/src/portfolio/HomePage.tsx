@@ -39,8 +39,11 @@ export const HomePage = () => {
     <div>
       <Navbar />
       <Intro />
-      <div className="px-6 md:px-40">
-        <h1 className="text-3xl font-extrabold text-gray-600 pt-10 border-b-2 border-zinc-600">CASE STUDIES</h1>
+
+      <div className="px-6 md:px-40 mt-20">
+        <h1 className="text-3xl font-extrabold text-gray-600 pt-10 border-b-2 border-zinc-600 font-changa">
+          CASE STUDIES
+        </h1>
       </div>
       <Link to="/project2">
         <CardItems
@@ -63,7 +66,9 @@ export const HomePage = () => {
       </Link>
 
       <div className="px-6 lg:mx-32">
-        <h1 className="text-3xl font-extrabold text-gray-600 pt-10 border-b-2 border-purple-900">GALLERY</h1>
+        <h1 className="text-3xl font-extrabold text-gray-600 pt-10 border-b-2 border-purple-900 font-changa">
+          GALLERY
+        </h1>
         <div className="grid grid-cols-1 w-full md:grid-cols-2 gap-5">
           <Link to="/illustrations">
             <Card

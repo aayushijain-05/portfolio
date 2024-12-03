@@ -8,7 +8,6 @@ import Project3 from "./portfolio/Project3";
 import { Project2 } from "./portfolio/Project2";
 import { About } from "./portfolio/About";
 
-
 const router = createBrowserRouter([
   {
     path: "/",

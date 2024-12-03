@@ -45,6 +45,7 @@ import mock7 from "../assets/mock7.png";
 import mock8 from "../assets/mock8.png";
 import BrandMockups from "./BrandMockups";
 
+
 const gifArray = [
   { image: gif5, link: "/project1" },
   { image: gallery3, link: "/project3" },
@@ -219,11 +220,13 @@ const competitiveAnalysisData = [
     ],
   },
 ];
+
 const styleArray = [logo1,logo2,logo3,logo4,logo11,logo6,logo2,logo8,logo9,logo10,logo11,logo2];
 const mockupArray=[mock1,mock2,mock1,mock3,mock1,mock4,mock1,mock5,mock1,mock6,mock7,mock8];
 
+
 const array = [
-  { text: "1. Brand Overview", link: "#brandoverview" },
+  { text: "1. Brand Overview", link: "#" },
   { text: "2. Project Overview", link: "#" },
   { text: "3. Brand Mockup", link: "#" },
   { text: "4. UX Research", link: "" },
@@ -258,7 +261,12 @@ export const Project2 = () => {
           <DemoVideo name="ALLURA" img={gif6} />
           <OtherProjects array={gifArray} />
         </div>
+
       </div>
+
+      <UxResearch personas={personas} user={user} />
+      <DemoVideo name="ALLURA" img={gif6} />
+      <OtherProjects array={gifArray} />
 
       <div className="mt-32">
         <Footer />

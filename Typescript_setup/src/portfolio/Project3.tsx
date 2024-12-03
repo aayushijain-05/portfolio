@@ -13,7 +13,7 @@ import BrandMockups from "./BrandMockups";
 import BrandOverview from "./BrandOverview";
 import OtherProjects from "./OtherProjects";
 import Footer from "../components/Footer";
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "../components/Navbar";
 
 const Project3 = () => {
   const array = [
@@ -35,7 +35,7 @@ const Project3 = () => {
   ];
   return (
     <div>
-      <Navbar/>
+    <Navbar />
       <CaseStudy
         name="ES JEWELRY"
         description="ES jewelry was a project aimed to create a brand that incorporates a cultural heritage and to convey natural elements with classy features."

@@ -10,7 +10,7 @@ interface BrandOverviewProps {
 const BrandOverview = ({ array, textArray }: BrandOverviewProps) => {
   return (
     <div className="mt-20">
-      <p className="uppercase text-center border-b-2 border-slate-900 pb-3 text-2xl font-bold text-gray-600">
+      <p className="uppercase text-center border-b-2 border-slate-900 pb-3 text-2xl font-bold text-gray-600 font-changa">
         Brand Overview
       </p>
 

@@ -13,13 +13,13 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col items-center justify-center px-20">
-        <img src={cat} className="w-32 h-32 mt-32" />
-        <p className="font-medium text-3xl mt-5 text-gray-700">Let's Stay Connected!</p>
-        <p className="text-xs mt-2 text-gray-700">
+      <div className="flex flex-col items-center justify-center px-10">
+        <img src={cat} className="w-32 h-32 mt-20" />
+        <p className="font-semibold text-4xl mt-5 text-gray-700 font-lato">Let's Stay Connected!</p>
+        <p className="text-sm mt-2 text-gray-700 font-lato">
           Say hi and let's have a conversation. I would love to hear from you.
         </p>
-        <div className="grid grid-cols-2 gap-x-10 mt-10 w-96 gap-y-5">
+        <div className="grid grid-cols-2 mt-10 px-6 lg:w-1/2 w-96 lg:px-20 gap-6">
           <div className="flex flex-col">
             <Label type="first name" />
             <Input type="text" name="firstname" />
@@ -36,14 +36,14 @@ const Contact = () => {
             <Label type="phone number" />
             <Input type="text" name="phone number" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col col-span-2">
             <Label type="message" />
             <TextArea />
           </div>
         </div>
         <Button className="bg-footer text-white p-3 mt-5">Submit</Button>
-        <p className="mt-20 text-gray-700 font-semibold text-2xl">OR</p>
-        <p className="mt-4 text-gray-700">Say hi with one of the following!</p>
+        <p className="mt-20 text-gray-700 font-semibold text-2xl font-lato">OR</p>
+        <p className="mt-4 text-gray-700 font-lato">Say hi with one of the following!</p>
         <div className="grid grid-cols-3 gap-3">
           <Link to="#">
             <AiFillInstagram className="h-12 w-12 mt-5 fill-footer" />

@@ -23,8 +23,10 @@ const Illustrations = () => {
     <div>
       <Navbar />
       <div className="px-6 md:px-40">
-        <h1 className="md:text-5xl text-3xl font-extrabold text-gray-600 pt-10 uppercase">Illustration Gallary</h1>
-        <p className="text-xs mt-5">
+        <h1 className="md:text-5xl text-3xl font-extrabold text-gray-600 pt-10 uppercase font-changa">
+          Illustration Gallary
+        </h1>
+        <p className="text-xs mt-5 font-droid">
           Creativity is a constant progress and evolution. This is a catalogue of my illustrations.
         </p>
         <div className="grid grid-cols-2 gap-x-4 gap-5 w-full">
