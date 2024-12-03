@@ -1,6 +1,5 @@
 interface CardAProps {
-  image?: string;
-  text?: string;
+  image: string;
   className?: string;
 }
 
