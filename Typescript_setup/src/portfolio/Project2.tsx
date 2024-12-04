@@ -29,6 +29,7 @@ import logo1 from "../assets/logo1.png";
 import logo2 from "../assets/logo2.png";
 import logo3 from "../assets/logo3.png";
 import logo4 from "../assets/logo4.png";
+import logo5 from "../assets/logo5.png";
 import logo6 from "../assets/logo6.png";
 import logo8 from "../assets/logo8.png";
 import logo9 from "../assets/logo9.png";
@@ -221,7 +222,20 @@ const competitiveAnalysisData = [
   },
 ];
 
-const styleArray = [logo1,logo2,logo3,logo4,logo11,logo6,logo2,logo8,logo9,logo10,logo11,logo2];
+const styleArray = [
+  { image: logo1, bgColor: 'bg-white' },
+  { image: logo2, bgColor: 'bg-green-500' },
+  { image: logo3, bgColor: 'bg-pink-900' },
+  { image: logo4, bgColor: 'bg-pink-900' },
+  { image: logo5, bgColor: 'bg-white' },
+  { image: logo6, bgColor: 'bg-white' },
+  { image: logo2, bgColor: 'bg-white' },
+  { image: logo8, bgColor: 'bg-green-800' },
+  { image: logo9, bgColor: 'bg-orange-100' },
+  { image: logo10, bgColor: 'bg-gray-500' },
+  { image: logo11, bgColor: 'bg-white' },
+  { image: logo2, bgColor: 'bg-white' }
+];
 const mockupArray=[mock1,mock2,mock1,mock3,mock1,mock4,mock1,mock5,mock1,mock6,mock7,mock8];
 
 
@@ -263,11 +277,6 @@ export const Project2 = () => {
         </div>
 
       </div>
-
-      <UxResearch personas={personas} user={user} />
-      <DemoVideo name="ALLURA" img={gif6} />
-      <OtherProjects array={gifArray} />
-
       <div className="mt-32">
         <Footer />
       </div>

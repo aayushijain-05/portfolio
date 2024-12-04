@@ -1,7 +1,8 @@
 import user2 from "../assets/user2.png";
+import user4 from "../assets/user4.png";
 
 export const UserJourney = ({ user }: { user: any }) => {
-  console.log(user);
+
 
   return (
     <div className="relative text-sm leading-loose border-4 border-orange-200 rounded-md p-6 max-w-5xl mx-auto mb-6 ">
@@ -41,7 +42,10 @@ export const UserJourney = ({ user }: { user: any }) => {
         </div>
       </div>
       <div className="w-full mt-4">
-        <img src={user2} alt="user illustration" className="w-full h-auto object-cover rounded-md" />
+        {
+          user.name=="Sara Lewis"?
+        
+        <img src={user2} alt="user illustration" className="w-full h-auto object-cover rounded-md" />:<img src={user4} alt="user illustration" className="w-full h-auto object-cover rounded-md" />}
       </div>
       <div className="mt-4 flex flex-col md:flex-row md:space-x-6">
         <div className="flex-1 md:ml-20">
