@@ -45,7 +45,7 @@ import mock6 from "../assets/mock6.png";
 import mock7 from "../assets/mock7.png";
 import mock8 from "../assets/mock8.png";
 import BrandMockups from "./BrandMockups";
-
+import Scroll from "../components/Scroll";
 
 const gifArray = [
   { image: gif5, link: "/project1" },
@@ -223,21 +223,20 @@ const competitiveAnalysisData = [
 ];
 
 const styleArray = [
-  { image: logo1, bgColor: 'bg-white' },
-  { image: logo2, bgColor: 'bg-green-500' },
-  { image: logo3, bgColor: 'bg-pink-900' },
-  { image: logo4, bgColor: 'bg-pink-900' },
-  { image: logo5, bgColor: 'bg-white' },
-  { image: logo6, bgColor: 'bg-white' },
-  { image: logo2, bgColor: 'bg-white' },
-  { image: logo8, bgColor: 'bg-green-800' },
-  { image: logo9, bgColor: 'bg-orange-100' },
-  { image: logo10, bgColor: 'bg-gray-500' },
-  { image: logo11, bgColor: 'bg-white' },
-  { image: logo2, bgColor: 'bg-white' }
+  { image: logo1, bgColor: "bg-white" },
+  { image: logo2, bgColor: "bg-green-500" },
+  { image: logo3, bgColor: "bg-pink-900" },
+  { image: logo4, bgColor: "bg-pink-900" },
+  { image: logo5, bgColor: "bg-white" },
+  { image: logo6, bgColor: "bg-white" },
+  { image: logo2, bgColor: "bg-white" },
+  { image: logo8, bgColor: "bg-green-800" },
+  { image: logo9, bgColor: "bg-orange-100" },
+  { image: logo10, bgColor: "bg-gray-500" },
+  { image: logo11, bgColor: "bg-white" },
+  { image: logo2, bgColor: "bg-white" },
 ];
-const mockupArray=[mock1,mock2,mock1,mock3,mock1,mock4,mock1,mock5,mock1,mock6,mock7,mock8];
-
+const mockupArray = [mock1, mock2, mock1, mock3, mock1, mock4, mock1, mock5, mock1, mock6, mock7, mock8];
 
 const array = [
   { text: "1. Brand Overview", link: "#" },
@@ -268,18 +267,22 @@ export const Project2 = () => {
             competitiveAnalysisData={competitiveAnalysisData}
           />
           <StyleGuide array={styleArray} />
-          <BrandMockups array={mockupArray} height="h-full" className="border-2 border-orange-200 rounded-md object-cover"/>
+          <BrandMockups
+            array={mockupArray}
+            height="h-full"
+            className="border-2 border-orange-200 rounded-md object-cover"
+          />
         </div>
         <div className="px-6 md:px-40">
-          <UxResearch personas={personas} user={user} />
+          <UxResearch personas={personas} user={user} className="border-red-900" />
           <DemoVideo name="ALLURA" img={gif6} />
           <OtherProjects array={gifArray} />
         </div>
-
       </div>
       <div className="mt-32">
         <Footer />
       </div>
+      <Scroll />
     </div>
   );
 };

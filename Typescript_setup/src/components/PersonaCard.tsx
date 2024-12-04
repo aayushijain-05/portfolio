@@ -6,12 +6,24 @@ interface PersonaCardProps {
   goals: string[];
   painPoints: string[];
   image: string;
+  className: string;
 }
 
-export const PersonaCard = ({ name, age, profession, dailyActivity, goals, painPoints, image }: PersonaCardProps) => {
+export const PersonaCard = ({
+  name,
+  age,
+  profession,
+  dailyActivity,
+  goals,
+  painPoints,
+  image,
+  className,
+}: PersonaCardProps) => {
   return (
     <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 p-8 bg-white rounded-lg max-w-4xl mx-auto mt-6 font-droid">
-      <div className="col-span-1 flex flex-col items-center mb-6 md:mb-0 bg-orange-200 rounded-md p-2">
+      <div
+        className={`col-span-1 flex flex-col items-center mb-6 md:mb-0  ${className || "bg-orange-200"} rounded-md p-2`}
+      >
         <img src={image} alt={name} className="w-40 rounded-md mb-6 object-cover shadow-md h-2/3" />
         <div className="h-1/3">
           <h2 className="text-3xl font-semibold text-gray-800 mb-2">{name}</h2>

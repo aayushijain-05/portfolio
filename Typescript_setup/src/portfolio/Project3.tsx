@@ -14,6 +14,7 @@ import BrandOverview from "./BrandOverview";
 import OtherProjects from "./OtherProjects";
 import Footer from "../components/Footer";
 import { Navbar } from "../components/Navbar";
+import Scroll from "../components/Scroll";
 
 const Project3 = () => {
   const array = [
@@ -35,7 +36,7 @@ const Project3 = () => {
   ];
   return (
     <div>
-    <Navbar />
+      <Navbar />
       <CaseStudy
         name="ES JEWELRY"
         description="ES jewelry was a project aimed to create a brand that incorporates a cultural heritage and to convey natural elements with classy features."
@@ -51,6 +52,7 @@ const Project3 = () => {
       <div className="mt-32">
         <Footer />
       </div>
+      <Scroll />
     </div>
   );
 };

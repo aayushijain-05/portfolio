@@ -9,6 +9,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { Navbar } from "@/components/Navbar";
+import Scroll from "../components/Scroll";
 const Contact = () => {
   return (
     <div>
@@ -60,6 +61,7 @@ const Contact = () => {
       <div className="mt-32">
         <Footer />
       </div>
+      <Scroll />
     </div>
   );
 };

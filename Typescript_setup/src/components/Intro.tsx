@@ -1,22 +1,47 @@
 import imgHand from "../assets/hand.gif";
 import { Link } from "react-router-dom";
 import { ArrowDown } from "lucide-react";
-
+import { motion } from "motion/react";
 export const Intro = () => {
   return (
     <div className="">
-      <div className="text-base items-center pr-28 flex flex-col-reverse p-6 lg:flex-row space-x-8 ml-64 lg:p-12 lg:items-center mt-6 lg:text-xl">
-        <img src={imgHand} alt="image" className="h-36 opacity-80 animate-slide-from-top" />
+      <div className="text-base items-center pr-28 flex flex-col-reverse p-6 lg:flex-row space-x-8 lg:p-12 lg:items-center mt-6 lg:text-xl">
+        <motion.img
+          src={imgHand}
+          alt="image"
+          className="h-36 ml-48 opacity-80"
+          animate={{ x: 50, y: 10, transition: { duration: 1 } }}
+        />
+
         <div className="opacity-80">
-          <strong className="text-purple-950 animate-slide-from-top font-black font-changa">HELLO!</strong>
-          <div className="animate-slide-from-left font-droid">I AM ENKHMAA.</div>
-          <strong className="text-purple-950 animate-slide-from-right font-black font-changa">
+          <motion.div
+            className="text-purple-950 mb-22 font-black font-changa ml-12"
+            animate={{ y: 10, transition: { duration: 1 } }}
+          >
+            HELLO!
+          </motion.div>
+
+          <motion.div className="mt-2" animate={{ x: 50, transition: { duration: 1 } }}>
+            I AM ENKHMAA.
+          </motion.div>
+
+          <motion.div
+            className="text-purple-950 font-black font-changa ml-24"
+            animate={{ x: -50, transition: { duration: 1 } }}
+          >
             INTERACTION DESIGNER
-          </strong>
-          <div className="animate-slide-from-left font-droid">INSPIRED BY FUNCTIONAL DESIGNS THAT</div>
-          <strong className="text-pink-900 animate-slide-from-right font-black font-changa">
+          </motion.div>
+
+          <motion.div className="font-droid" animate={{ x: 50, transition: { duration: 1 } }}>
+            INSPIRED BY FUNCTIONAL DESIGNS THAT
+          </motion.div>
+
+          <motion.div
+            className="text-pink-900 font-black font-changa ml-24"
+            animate={{ x: -50, transition: { duration: 1 } }}
+          >
             HIGHLIGHT HUMAN EXPERIENCE.
-          </strong>
+          </motion.div>
         </div>
       </div>
       <div className="underline decoration-1 flex flex-row space-x-60  font-semibold justify-center mt-16">

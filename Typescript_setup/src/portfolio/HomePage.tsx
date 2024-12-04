@@ -4,7 +4,7 @@ import { CardItems } from "../components/CardItems";
 import { Video } from "../components/Video";
 import { Video1 } from "../components/Video1";
 import { CardImg } from "../components/CardImg";
-import { useState, useEffect } from "react";
+import Scroll from "../components/Scroll";
 import Card from "../components/Card";
 import gallery1 from "../assets/gallery1.jpeg";
 import gallery2 from "../assets/gallery2.jpg";
@@ -18,23 +18,6 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 export const HomePage = () => {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
   return (
     <div>
       <Navbar />
@@ -91,15 +74,7 @@ export const HomePage = () => {
       <div className="mt-32">
         <Footer />
       </div>
-
-      {showButton && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-20 right-5 bg-purple-200/60 text-white rounded-md py-2 px-4 shadow-md hover:bg-purple-600 transition duration-300"
-        >
-          ↑
-        </button>
-      )}
+      <Scroll />
     </div>
   );
 };

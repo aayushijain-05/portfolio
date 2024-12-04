@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
+
 interface DemoVideoProps {
   name: string;
   img: string;
@@ -17,7 +19,14 @@ const DemoVideo = ({ name, img }: DemoVideoProps) => {
             click here
           </Link>
         </p>
-        <img src={img} alt="" />
+        <motion.img
+          src={img}
+          whileHover={{
+            scale: 1.2,
+            transition: { duration: 0.5, ease: "linear" },
+          }}
+          whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
+        />
       </div>
     </div>
   );

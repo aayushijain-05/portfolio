@@ -9,6 +9,8 @@ import gallery3 from "../assets/gallery3.png";
 import Carousel from "../components/Carousel";
 import OtherProjects from "./OtherProjects";
 import { Navbar } from "@/components/Navbar";
+import Scroll from "../components/Scroll";
+import { motion } from "framer-motion";
 const Graphics = () => {
   const imgArray = [gif1, gif2, gif3, gif4, gif5];
   const gifArray = [
@@ -32,7 +34,15 @@ const Graphics = () => {
           {imgArray &&
             imgArray.map((img) => {
               return (
-                <img src={img} alt="" className="h-72 cursor-pointer md:h-96 w-full object-cover rounded-md mt-12" />
+                <motion.img
+                  src={img}
+                  alt=""
+                  className="h-72 cursor-pointer md:h-96 w-full object-cover rounded-md mt-12"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: false, amount: 0.2 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                />
               );
             })}
           <div className="mt-12">
@@ -44,6 +54,7 @@ const Graphics = () => {
       <div className="mt-32">
         <Footer />
       </div>
+      <Scroll />
     </div>
   );
 };

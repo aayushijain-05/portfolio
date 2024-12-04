@@ -11,6 +11,8 @@ import gif6 from "../assets/gif6.gif";
 import Carousel from "../components/Carousel";
 import OtherProjects from "./OtherProjects.tsx";
 import { Navbar } from "@/components/Navbar.tsx";
+import Scroll from "../components/Scroll";
+import { motion } from "framer-motion";
 const Illustrations = () => {
   const imgArray = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7];
   const gifArray = [
@@ -33,7 +35,15 @@ const Illustrations = () => {
           {imgArray &&
             imgArray.map((img) => {
               return (
-                <img src={img} alt="" className="h-72 cursor-pointer md:h-96 w-full object-cover rounded-md mt-12" />
+                <motion.img
+                  src={img}
+                  alt=""
+                  className="h-72 cursor-pointer md:h-96 w-full object-cover rounded-md mt-12"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: false, amount: 0.2 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                />
               );
             })}
           <div className="mt-12">
@@ -45,6 +55,7 @@ const Illustrations = () => {
       <div className="mt-32">
         <Footer />
       </div>
+      <Scroll />
     </div>
   );
 };

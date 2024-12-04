@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import {PersonaCard} from "./PersonaCard";
+import { PersonaCard } from "./PersonaCard";
 
 interface Persona {
   name: string;
@@ -13,11 +13,11 @@ interface Persona {
 }
 
 interface PersonaCarouselProps {
-  personas: Persona[]; 
+  personas: Persona[];
+  className: string;
 }
 
-
-export const PersonaCarousel = ({ personas }: PersonaCarouselProps) => {
+export const PersonaCarousel = ({ personas, className }: PersonaCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -29,8 +29,8 @@ export const PersonaCarousel = ({ personas }: PersonaCarouselProps) => {
   };
 
   return (
-    <div className="relative border-4 border-orange-200 mt-6 rounded-md">
-      <PersonaCard {...personas[currentIndex]} />
+    <div className={`relative border-4  mt-6 rounded-md ${className || "border-orange-200"}`}>
+      <PersonaCard {...personas[currentIndex]} className="bg-purple-100" />
       <div className="absolute bottom-0 left-0 w-full flex justify-center space-x-2 p-4">
         {personas.map((_, index) => (
           <button
@@ -41,18 +41,12 @@ export const PersonaCarousel = ({ personas }: PersonaCarouselProps) => {
         ))}
       </div>
       <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
-        <button
-          className="text-orange-200 p-2 text-5xl"
-          onClick={prevSlide}
-        >
+        <button className="text-orange-200 p-2 text-5xl" onClick={prevSlide}>
           &lt;
         </button>
       </div>
-      <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
-        <button
-          className="text-orange-200 p-2 text-5xl"
-          onClick={nextSlide}
-        >
+      <div className="absolute top-1/2 right-4 transform -translate-y-1/2 sm:hidden">
+        <button className="text-orange-200 p-2 text-5xl" onClick={nextSlide}>
           &gt;
         </button>
       </div>

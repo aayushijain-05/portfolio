@@ -33,6 +33,7 @@ import font4 from "../assets/font4.png";
 import font5 from "../assets/font5.png";
 import font6 from "../assets/font6.png";
 import user3 from "../assets/user3.png";
+import Scroll from "../components/Scroll";
 
 const Project1 = () => {
   const array = [
@@ -129,8 +130,8 @@ const Project1 = () => {
       name: "Lucy Mcray",
       age: 25,
       profession: "Contemporary Dancer",
-      image: Persona4, 
-      imageCreditLink: "https://www.atikhbana.com", 
+      image: Persona4,
+      imageCreditLink: "https://www.atikhbana.com",
       dailyActivity: [
         "Morning Exercise",
         "Commutes to dance auditions",
@@ -151,7 +152,7 @@ const Project1 = () => {
       name: "Jennifer Smith",
       age: 20,
       profession: "Student",
-      image: Persona5, 
+      image: Persona5,
       imageCreditLink: "https://www.matheusferrero.com",
       dailyActivity: [
         "Taking online classes in UBC for sociology",
@@ -159,10 +160,7 @@ const Project1 = () => {
         "Works part-time at a cafe",
         "Commutes to and from work for 1hr and 30mins daily",
       ],
-      goals: [
-        "Category for personalized favorite artists",
-        "Recategorize most played music by time period",
-      ],
+      goals: ["Category for personalized favorite artists", "Recategorize most played music by time period"],
       painPoints: [
         "Easily accessed playlists",
         "Update on new music similar to her favorites",
@@ -173,7 +171,7 @@ const Project1 = () => {
       name: "Jerome Martin",
       age: 29,
       profession: "Visual Artist",
-      image: Persona6, 
+      image: Persona6,
       imageCreditLink: "https://www.joshlawrence.com",
       dailyActivity: [
         "Works from home as a visual artist",
@@ -200,32 +198,29 @@ const Project1 = () => {
       age: 18,
       profession: "Student",
       image: user3,
-      scenario: 
+      scenario:
         "Demi is a high school senior student. She lives with her parents in the suburbs. Since the Covid-19 pandemic, she has been attending school online and on and off in person. Due to the lockdown, she has been doing all of her school work from home. She is currently studying to attend University of Toronto for next year. She loves to listen to her favorite tunes while she studies. She loves discovering new artists and staying up to date with new releases.",
       expectations: [
         "New music release update",
         "Easy to use and aesthetically fun UI design",
         "Option to make new playlists for different moods and activities",
         "Personalized playlists for user",
-        "New singles update on favorite artists"
+        "New singles update on favorite artists",
       ],
       opportunity: [
         "Requires all users to make an account to browse the playlist",
         "Not enough playlist options displayed",
-        "Improve on more personalized services"
+        "Improve on more personalized services",
       ],
       internalOwnership: [
         "Option to get access from Gmail or Apple account with Autofill",
         "Display the most popular playlists first",
         "Add continue listening playlist on browser",
-        "Add suggestion playlist on the browser"
+        "Add suggestion playlist on the browser",
       ],
       credit: "Leohoho",
-      
     },
   ];
-  
-  
 
   return (
     <div>
@@ -245,15 +240,16 @@ const Project1 = () => {
           taskArray={taskArray}
           competitiveAnalysisData={competitiveAnalysisData}
         />
-        <StyleGuide array={styleArray} className="border-pink-900"/>
+        <StyleGuide array={styleArray} className="border-pink-900" />
         <BrandMockups array={mockupArray} />
-        <UxResearch personas={personas} user={user} />
+        <UxResearch personas={personas} user={user} className="border-red-900" />
         <DemoVideo name="ZURA" img={gif5} />
         <OtherProjects array={gifArray} />
       </div>
       <div className="mt-32">
         <Footer />
       </div>
+      <Scroll />
     </div>
   );
 };

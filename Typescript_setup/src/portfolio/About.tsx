@@ -7,6 +7,7 @@ import { AboutComp } from "@/components/AboutComp";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import Scroll from "../components/Scroll";
 
 export const About = () => {
   return (
@@ -84,6 +85,7 @@ export const About = () => {
         </div>
       </div>
       <Footer />
+      <Scroll />
     </div>
   );
 };

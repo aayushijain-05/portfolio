@@ -22,7 +22,7 @@ export default {
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
       },
-     
+
       fontFamily: {
         changa: ["Changa One", "Impact", "sans-serif"],
         droid: ["Droid Sans", "sans-serif"],
