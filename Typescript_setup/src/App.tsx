@@ -7,6 +7,8 @@ import Contact from "./portfolio/Contact";
 import Project3 from "./portfolio/Project3";
 import { Project2 } from "./portfolio/Project2";
 import { About } from "./portfolio/About";
+import { UserCarousel } from "./components/UserCarousel";
+
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/project3",
     element: <Project3 />,
+  },
+  {
+    path:"/carousel",
+    element: <UserCarousel/>,
   },
 ]);
 

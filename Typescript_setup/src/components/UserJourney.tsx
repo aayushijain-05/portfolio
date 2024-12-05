@@ -1,5 +1,7 @@
-import user2 from "../assets/user2.png";
+// import user2 from "../assets/user2.png";
 import user4 from "../assets/user4.png";
+import {Link} from "react-router-dom";
+
 
 interface UserJourneyProps {
   user: any;
@@ -7,6 +9,8 @@ interface UserJourneyProps {
 }
 
 export const UserJourney = ({ user, className }: UserJourneyProps) => {
+  
+
   return (
     <div
       className={`relative text-sm leading-loose border-4 ${
@@ -49,7 +53,9 @@ export const UserJourney = ({ user, className }: UserJourneyProps) => {
       </div>
       <div className="w-full mt-4">
         {user.name == "Sara Lewis" ? (
-          <img src={user2} alt="user illustration" className="w-full h-auto object-cover rounded-md" />
+        <Link to="/carousel">
+        <img src="src/assets/user1.png" alt="User 1"/>
+      </Link>
         ) : (
           <img src={user4} alt="user illustration" className="w-full h-auto object-cover rounded-md" />
         )}
